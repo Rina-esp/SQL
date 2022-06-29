@@ -21,12 +21,6 @@ dependencies {
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'com.codeborne:selenide:5.19.0'
     testImplementation 'org.slf4j:slf4j-simple:1.7.32'
-    testImplementation group: 'org.testng', name: 'testng', version: '7.6.0'
-    implementation group: 'com.codeborne', name: 'selenide', version: '6.5.2'
-    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.29'
-    implementation group: 'commons-dbutils', name: 'commons-dbutils', version: '1.7'
-    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
-
 }
 
 test {
