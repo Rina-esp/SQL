@@ -36,7 +36,7 @@ public class DbInteraction {
 
     try (
         var conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3305/app", "app", "pass"
+            "jdbc:mysql://localhost:3306/app", "app", "pass"
         );
     ) {
       runner.execute(conn, authSQL, new ScalarHandler<>());
@@ -54,7 +54,7 @@ public class DbInteraction {
 
     try (
         var conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3305/app", "app", "pass"
+            "jdbc:mysql://localhost:3306/app", "app", "pass"
         );
     ) {
       runner.update(conn, addUserSQL, user.getId(), user.getLogin(), user.getPassword());
